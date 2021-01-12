@@ -1,0 +1,26 @@
+{
+	"manifest_version": 2,
+	"name": "Switch between http S",
+	"version": "1.2",
+	"description": "A button to quickly manually switch between httpS and http for current tab",
+	"homepage_url": "https://garywill.github.io",
+    "developer": {
+        "name": "Garywill",
+        "url": "https://github.com/garywill/switch-between-http-s"
+    },
+	"icons": {
+        "128": "icon.svg"
+    },
+	"permissions": [
+		"tabs",
+		"activeTab"
+	],
+	"page_action": {
+		"default_icon": "icon.svg",
+		"default_title": "Switch between httpS and http",
+		"show_matches": ["http://*/*", "https://*/*" ]
+	},
+	"background": {
+        "scripts": ["background.js"]
+    }
+}
